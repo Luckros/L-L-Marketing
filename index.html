@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ===== SEO básico ===== -->
+<!-- TODO: reemplazar TU-DOMINIO.com por tu dominio real en todas las URLs de esta sección -->
+<title>Edición de reels y diseño para coaches, start ups y negocios locales | L&L Marketing</title>
+<meta name="description" content="Editamos tus reels, diseñamos tus piezas y armamos tu calendario mensual. Agencia de contenido para coaches, start ups y y más. Plan desde USD 200/mes.">
+<meta name="keywords" content="edición de reels, diseño gráfico redes sociales, agencia de contenido, marketing para coaches, marketing para y más, calendario editorial, community manager Buenos Aires">
+<meta name="robots" content="index, follow">
+<meta name="author" content="L&L Marketing">
+<link rel="canonical" href="https://TU-DOMINIO.com/">
+
+<!-- ===== Open Graph (WhatsApp, Instagram, Facebook, LinkedIn) ===== -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://TU-DOMINIO.com/">
+<meta property="og:title" content="Hacemos que te encuentren en redes. Y que se queden.">
+<meta property="og:description" content="Edición de video, diseño y estrategia de contenido para coaches, start ups y negocios que quieren crecer en redes sociales. Plan desde USD 200/mes.">
+<meta property="og:image" content="https://TU-DOMINIO.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_AR">
+<meta property="og:site_name" content="L&L Marketing">
+
+<!-- ===== Twitter / X Card ===== -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hacemos que te encuentren en redes. Y que se queden.">
+<meta name="twitter:description" content="Edición de video, diseño y estrategia de contenido para coaches, start ups y negocios que quieren crecer en redes sociales.">
+<meta name="twitter:image" content="https://TU-DOMINIO.com/og-image.jpg">
+
+<!-- ===== Favicon (reemplazar por tus propios archivos) ===== -->
+<link rel="icon" type="image/png" href="/favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fraunces:ital,wght@1,500;1,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- ===== Datos estructurados (Schema.org) — LocalBusiness ===== -->
+<!-- Esto ayuda a Google a entenderte como negocio local y habilita rich results (estrellas, horario, etc.) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "L&L Marketing",
+  "description": "Agencia de edición de video, diseño gráfico, copywriting y gestión de redes sociales para coaches, start ups y negocios locales.",
+  "url": "https://TU-DOMINIO.com/",
+  "image": "https://TU-DOMINIO.com/og-image.jpg",
+  "priceRange": "USD 200 - USD 500",
+  "areaServed": {
+    "@type": "Country",
+    "name": "Argentina"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Buenos Aires",
+    "addressCountry": "AR"
+  },
+  "sameAs": [
+    "https://www.instagram.com/TU-USUARIO/",
+    "https://wa.me/5491163647233"
+  ],
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Edición de video / reels" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Diseño gráfico y copywriting" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Calendario editorial mensual" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reporte mensual de métricas" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Diseño y desarrollo de webs" } }
+  ]
+}
+</script>
+<style>
+  :root{
+    --bg:#F3F3ED;
+    --panel:#FFFFFF;
+    --ink:#14161F;
+    --ink-soft:#4A4C57;
+    --cobalt:#2A3EFF;
+    --mango:#F4A81E;
+    --coral:#FF5A36;
+    --line:#DEDBD0;
+    --radius:2px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Inter', sans-serif;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%; display:block;}
+  a{color:inherit; text-decoration:none;}
+  button{font-family:inherit; cursor:pointer;}
+  :focus-visible{outline:3px solid var(--cobalt); outline-offset:3px;}
+
+  .wrap{max-width:1120px; margin:0 auto; padding:0 24px;}
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+  }
+  .display{font-family:'Archivo Black', sans-serif; line-height:1.05; letter-spacing:-.01em;}
+  .accent-italic{font-family:'Fraunces', serif; font-style:italic; font-weight:500;}
+  hr.rule{border:none; border-top:1px solid var(--line); margin:0;}
+
+  /* ---------- NAV ---------- */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:rgba(243,243,237,.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  nav{
+    max-width:1120px; margin:0 auto; padding:16px 24px;
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .logo{font-family:'Archivo Black', sans-serif; font-size:18px;}
+  .logo span{color:var(--cobalt);}
+  .nav-links{display:flex; gap:28px; font-size:14px; font-weight:500;}
+  .nav-links a{border-bottom:2px solid transparent; padding-bottom:2px; transition:border-color .15s;}
+  .nav-links a:hover{border-color:var(--mango);}
+  .nav-cta{
+    background:var(--ink); color:#fff; font-size:13px; font-weight:600;
+    padding:10px 18px; border-radius:var(--radius);
+    white-space:nowrap;
+  }
+  .nav-cta:hover{background:var(--cobalt);}
+  @media(max-width:720px){.nav-links{display:none;}}
+
+  /* ---------- TICKER ---------- */
+  .ticker{
+    background:var(--ink); color:#fff; overflow:hidden;
+    border-bottom:1px solid var(--ink);
+  }
+  .ticker-track{
+    display:flex; white-space:nowrap; width:max-content;
+    animation:scroll 26s linear infinite;
+    font-family:'IBM Plex Mono', monospace; font-size:13px; letter-spacing:.08em;
+    padding:9px 0;
+  }
+  .ticker-track span{padding:0 22px; display:inline-flex; align-items:center; gap:22px;}
+  .ticker-track .dot{color:var(--mango);}
+  @keyframes scroll{from{transform:translateX(0);} to{transform:translateX(-50%);}}
+  @media(prefers-reduced-motion:reduce){.ticker-track{animation:none; overflow-x:auto;}}
+
+  /* ---------- HERO ---------- */
+  .hero{position:relative; padding:96px 0 0; overflow:hidden;}
+  .hero-inner{position:relative; z-index:2;}
+  .hero h1{font-size:clamp(38px,6.4vw,78px); max-width:900px;}
+  .hero h1 em{font-style:normal; color:var(--cobalt);}
+  .hero p.lede{
+    font-size:19px; color:var(--ink-soft); max-width:520px; margin-top:22px;
+  }
+  .hero-ctas{display:flex; gap:14px; margin-top:34px; flex-wrap:wrap;}
+  .btn-primary{
+    background:var(--cobalt); color:#fff; font-weight:600; font-size:15px;
+    padding:15px 26px; border-radius:var(--radius); border:none;
+    display:inline-flex; align-items:center; gap:8px;
+    transition:transform .12s ease, background .15s;
+  }
+  .btn-primary:hover{background:#1c2ecf; transform:translateY(-1px);}
+  .btn-ghost{
+    border:1.5px solid var(--ink); font-weight:600; font-size:15px;
+    padding:14px 24px; border-radius:var(--radius);
+  }
+  .btn-ghost:hover{background:var(--ink); color:#fff;}
+  .awning{
+    height:34px; margin-top:70px;
+    background:repeating-linear-gradient(115deg, var(--cobalt) 0 34px, var(--mango) 34px 68px);
+  }
+  @media(max-width:640px){.hero{padding-top:64px;} .awning{margin-top:44px;}}
+
+  /* ---------- SECTION BASE ---------- */
+  section{padding:88px 0;}
+  .section-head{max-width:620px; margin-bottom:52px;}
+  .section-head h2{font-size:clamp(28px,3.6vw,42px); margin-top:10px;}
+  .section-head p{color:var(--ink-soft); margin-top:14px; font-size:16px;}
+
+  /* ---------- SERVICIOS ---------- */
+  .services{background:var(--panel); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .service-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line);}
+  .service-card{background:var(--panel); padding:32px 26px; position:relative;}
+  .service-card .num{font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--mango); font-weight:500;}
+  .service-card h3{font-family:'Archivo Black', sans-serif; font-size:19px; margin-top:14px; letter-spacing:-.01em;}
+  .service-card p{color:var(--ink-soft); font-size:14.5px; margin-top:10px;}
+  @media(max-width:860px){.service-grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:560px){.service-grid{grid-template-columns:1fr;}}
+
+  /* ---------- MUESTRAS / ANTES-DESPUES ---------- */
+  .sample{
+    display:grid; grid-template-columns:1fr 1fr; gap:0;
+    border:1px solid var(--line); background:var(--panel); margin-bottom:28px;
+  }
+  .sample-media{position:relative; aspect-ratio:4/3; overflow:hidden;}
+  .sample-media img, .sample-media svg{width:100%; height:100%; object-fit:cover; position:absolute; inset:0; display:block;}
+  .sample-media .tag{
+    position:absolute; top:12px; left:12px; z-index:3;
+    font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:.08em;
+    padding:5px 10px; border-radius:var(--radius); font-weight:500;
+  }
+  .tag-before{background:#fff; border:1px solid var(--ink);}
+  .tag-after{background:var(--cobalt); color:#fff;}
+  .sample-info{padding:30px 28px; display:flex; flex-direction:column; justify-content:center;}
+  .sample-info h3{font-size:20px; font-weight:700;}
+  .sample-info p{color:var(--ink-soft); margin-top:8px; font-size:14.5px;}
+  .metric{
+    margin-top:16px; display:inline-flex; align-items:center; gap:8px;
+    font-family:'IBM Plex Mono', monospace; font-size:13px; font-weight:500;
+    background:#FBF0DA; color:#8a5a06; padding:8px 12px; border-radius:var(--radius); width:fit-content;
+  }
+  .disclaimer{font-size:12.5px; color:var(--ink-soft); margin-top:20px; max-width:640px;}
+  @media(max-width:760px){.sample{grid-template-columns:1fr;}}
+
+  /* ---------- SOBRE NOSOTROS ---------- */
+  .about{background:var(--ink); color:#fff;}
+  .about .section-head p{color:#B9BAC6;}
+  .about-text{font-size:20px; max-width:760px; font-family:'Fraunces', serif; font-style:italic; font-weight:500; line-height:1.5;}
+  .about-text strong{font-style:normal; font-family:'Inter',sans-serif; font-weight:700; color:var(--mango);}
+
+  /* ---------- PROCESO ---------- */
+  .process-list{border-top:1px solid var(--line);}
+  .process-row{
+    display:grid; grid-template-columns:90px 1fr; gap:24px;
+    padding:26px 0; border-bottom:1px solid var(--line);
+    align-items:start;
+  }
+  .process-row .step{font-family:'Archivo Black', sans-serif; font-size:34px; color:var(--line); -webkit-text-stroke:1px var(--ink); color:transparent;}
+  .process-row h3{font-size:19px; font-weight:700;}
+  .process-row p{color:var(--ink-soft); margin-top:6px; font-size:14.5px; max-width:520px;}
+
+  /* ---------- RESULTADOS ESPERADOS ---------- */
+  .results{background:var(--panel); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .results-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line); margin-top:8px;}
+  .result-card{background:var(--panel); padding:30px 24px;}
+  .result-card .big{font-family:'Archivo Black', sans-serif; font-size:40px; color:var(--cobalt);}
+  .result-card p{color:var(--ink-soft); font-size:14px; margin-top:8px;}
+  @media(max-width:700px){.results-grid{grid-template-columns:1fr;}}
+
+  /* ---------- PRICING / CTA FINAL ---------- */
+  .pricing{padding:100px 0;}
+  .price-card{
+    border:1px solid var(--ink); background:var(--panel); padding:44px; max-width:560px;
+    position:relative;
+  }
+  .price-card::before{
+    content:""; position:absolute; top:-1px; left:-1px; width:52px; height:6px; background:var(--coral);
+  }
+  .price-card .amount{font-family:'Archivo Black', sans-serif; font-size:52px;}
+  .price-card .amount span{font-family:'Inter',sans-serif; font-size:16px; font-weight:500; color:var(--ink-soft);}
+  .price-card ul{margin-top:22px; list-style:none;}
+  .price-card li{
+    padding:11px 0; border-top:1px solid var(--line); font-size:14.5px;
+    display:flex; gap:10px; align-items:flex-start;
+  }
+  .price-card li:first-child{border-top:none;}
+  .price-card li::before{content:"—"; color:var(--mango); font-weight:700;}
+  .price-card .note{font-size:13px; color:var(--ink-soft); margin-top:20px;}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--ink); color:#B9BAC6; padding:44px 0; font-size:13px;}
+  .footer-row{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;}
+  footer .logo{color:#fff;}
+
+  /* ---------- WHATSAPP FLOAT ---------- */
+  .wa-float{
+    position:fixed; bottom:22px; right:22px; z-index:60;
+    background:#25D366; color:#fff; width:56px; height:56px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center; box-shadow:0 6px 18px rgba(0,0,0,.25);
+    transition:transform .15s;
+  }
+  .wa-float:hover{transform:scale(1.06);}
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">L&L<span> </span>Marketing</div>
+    <div class="nav-links">
+      <a href="#servicios">Servicios</a>
+      <a href="#trabajos">Trabajos</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#tarifas">Tarifas</a>
+    </div>
+    <a class="nav-cta" href="#cta" target="_blank" rel="noopener">Hablemos</a>
+  </nav>
+</header>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span><span class="dot">●</span>COACHES</span>
+    <span><span class="dot">●</span>START UPS</span>
+    <span><span class="dot">●</span>Y MÁS</span>
+    <span><span class="dot">●</span>COACHES</span>
+    <span><span class="dot">●</span>START UPS</span>
+    <span><span class="dot">●</span>Y MÁS</span>
+    <span><span class="dot">●</span>COACHES</span>
+    <span><span class="dot">●</span>START UPS</span>
+    <span><span class="dot">●</span>Y MÁS</span>
+    <span><span class="dot">●</span>COACHES</span>
+    <span><span class="dot">●</span>START UPS</span>
+    <span><span class="dot">●</span>Y MÁS</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-inner">
+    <p class="eyebrow">Edición · Diseño · Contenido · Webs</p>
+    <h1 class="display">Hacemos que te encuentren en redes. <em>Y que se queden.</em></h1>
+    <p class="lede">Editamos tus reels, diseñamos tus piezas y armamos tu calendario mensual — para que tu marca tenga la presencia que merece, sin que tengas que aprender a hacerlo vos mismo.</p>
+    <div class="hero-ctas">
+      <a class="btn-primary" id="cta" href="https://wa.me/5491163647233?text=Hola!%20Vi%20la%20web%20y%20quiero%20mi%20mini-auditor%C3%ADa%20gratis%20de%20Instagram%20%F0%9F%99%8C" target="_blank" rel="noopener">
+        Quiero mi mini-auditoría gratis →
+      </a>
+      <a class="btn-ghost" href="#trabajos">Ver trabajos</a>
+    </div>
+  </div>
+  <div class="awning" aria-hidden="true"></div>
+</section>
+
+<!-- SERVICIOS -->
+<section class="services" id="servicios">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Qué hacemos</p>
+      <h2 class="display">Todo lo que tu marca necesita para verse — y encontrarse.</h2>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="service-grid">
+      <div class="service-card">
+        <p class="num">01</p>
+        <h3>Edición de video</h3>
+        <p>Reels y contenido audiovisual con ritmo, texto y llamado a la acción — pensados para retener.</p>
+      </div>
+      <div class="service-card">
+        <p class="num">02</p>
+        <h3>Diseño + copywriting</h3>
+        <p>Piezas visuales y textos con identidad propia, no plantillas genéricas.</p>
+      </div>
+      <div class="service-card">
+        <p class="num">03</p>
+        <h3>Calendario editorial</h3>
+        <p>Contenido planificado mes a mes. Vos aprobás, nosotros ejecutamos.</p>
+      </div>
+      <div class="service-card">
+        <p class="num">04</p>
+        <h3>Reporte mensual</h3>
+        <p>Alcance, likes y seguidores explicados en simple — sin tecnicismos.</p>
+      </div>
+      <div class="service-card">
+        <p class="num">05</p>
+        <h3>Publicación y programación</h3>
+        <p>Nos ocupamos de que salga a tiempo, en el horario que mejor funciona.</p>
+      </div>
+      <div class="service-card">
+        <p class="num">06</p>
+        <h3>Webs y landing pages</h3>
+        <p>Tu presencia digital completa: una página que convierte visitas en clientes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MUESTRAS -->
+<section id="trabajos">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Trabajos</p>
+      <h2 class="display">Así se ve el <span class="accent-italic">antes y después.</span></h2>
+      <p>Contenido casero transformado en piezas que generan resultados.</p>
+    </div>
+
+    <div class="sample">
+      <div class="sample-media">
+        <span class="tag tag-before">ANTES</span>
+        <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Mockup de un celular reproduciendo un video casero sin editar, sin texto en pantalla y con líneas de temblor de cámara">
+          <rect width="400" height="300" fill="#EAEAE2"/>
+          <rect x="138" y="18" width="146" height="264" rx="20" fill="#14161F"/>
+          <rect x="147" y="30" width="128" height="240" rx="9" fill="#9CA0B0"/>
+          <rect x="147" y="30" width="128" height="240" rx="9" fill="url(#rawShake)"/>
+          <defs>
+            <linearGradient id="rawShake" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#B6B9C4"/>
+              <stop offset="1" stop-color="#787B89"/>
+            </linearGradient>
+          </defs>
+          <g stroke="#FFFFFF" stroke-opacity=".18" stroke-width="1.5">
+            <path d="M150 90 L272 96" />
+            <path d="M150 132 L270 126" />
+            <path d="M152 180 L273 186" />
+          </g>
+          <circle cx="160" cy="44" r="4" fill="#FF5A36"/>
+          <text x="169" y="48" font-family="IBM Plex Mono, monospace" font-size="10" fill="#FFFFFF" opacity=".85">REC</text>
+          <text x="153" y="258" font-family="IBM Plex Mono, monospace" font-size="10" fill="#FFFFFF" opacity=".6">00:12 — sin cortes</text>
+        </svg>
+      </div>
+      <div class="sample-info">
+        <h3>Reel de coach de bienestar</h3>
+        <p>Video casero grabado con celular, sin cortes ni texto en pantalla.</p>
+        <div class="metric">📈 +340 seguidores en 30 días</div>
+      </div>
+    </div>
+
+    <div class="sample">
+      <div class="sample-info">
+        <h3>Feed de start up de indumentaria</h3>
+        <p>Rediseño completo de grilla con paleta e identidad definida.</p>
+        <div class="metric">📈 +28% de alcance en 60 días</div>
+      </div>
+      <div class="sample-media">
+        <span class="tag tag-after">DESPUÉS</span>
+        <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Mockup de un celular mostrando una grilla de Instagram curada de 3 por 3 con paleta de marca consistente">
+          <rect width="400" height="300" fill="#F3F3ED"/>
+          <rect x="138" y="18" width="146" height="264" rx="20" fill="#14161F"/>
+          <rect x="147" y="30" width="128" height="240" rx="9" fill="#FFFFFF"/>
+          <circle cx="163" cy="46" r="8" fill="#F4A81E"/>
+          <rect x="177" y="41" width="52" height="4" rx="2" fill="#14161F"/>
+          <rect x="177" y="49" width="34" height="3" rx="1.5" fill="#B9BAC6"/>
+          <g>
+            <rect x="151" y="64" width="38" height="38" fill="#2A3EFF"/>
+            <rect x="192" y="64" width="38" height="38" fill="#F4A81E"/>
+            <rect x="233" y="64" width="38" height="38" fill="#FF5A36"/>
+            <rect x="151" y="105" width="38" height="38" fill="#14161F"/>
+            <rect x="192" y="105" width="38" height="38" fill="#2A3EFF" opacity=".75"/>
+            <rect x="233" y="105" width="38" height="38" fill="#F4A81E" opacity=".8"/>
+            <rect x="151" y="146" width="38" height="38" fill="#FF5A36" opacity=".75"/>
+            <rect x="192" y="146" width="38" height="38" fill="#14161F" opacity=".85"/>
+            <rect x="233" y="146" width="38" height="38" fill="#2A3EFF"/>
+          </g>
+          <text x="211" y="200" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="7" fill="#4A4C57">grilla consistente</text>
+          <text text x="211" y="210" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="7" fill="#4A4C57">· paleta propia ·</text>
+        </svg>
+      </div>
+    </div>
+
+    <div class="sample">
+      <div class="sample-media">
+        <span class="tag tag-before">ANTES</span>
+        <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Mockup de varias fotos de productos sueltas, desprolijas y sin diseño, como llegan antes del trabajo de la agencia">
+          <rect width="400" height="300" fill="#EAEAE2"/>
+          <g transform="rotate(-7 120 110)">
+            <rect x="70" y="70" width="100" height="80" fill="#C9B79C" stroke="#FFFFFF" stroke-width="4"/>
+            <text x="76" y="146" font-family="IBM Plex Mono, monospace" font-size="8" fill="#6A5B45" opacity=".7">IMG_2031.jpg</text>
+          </g>
+          <g transform="rotate(5 250 90)">
+            <rect x="205" y="55" width="90" height="72" fill="#A98B6A" stroke="#FFFFFF" stroke-width="4"/>
+            <text x="210" y="123" font-family="IBM Plex Mono, monospace" font-size="8" fill="#FFFFFF" opacity=".8">IMG_2033.jpg</text>
+          </g>
+          <g transform="rotate(-4 165 205)">
+            <rect x="120" y="170" width="96" height="76" fill="#8B6F4E" stroke="#FFFFFF" stroke-width="4"/>
+            <text x="126" y="242" font-family="IBM Plex Mono, monospace" font-size="8" fill="#FFFFFF" opacity=".8">IMG_2034.jpg</text>
+          </g>
+          <g transform="rotate(8 300 210)">
+            <rect x="255" y="175" width="88" height="70" fill="#D8CBB5" stroke="#FFFFFF" stroke-width="4"/>
+            <text x="260" y="241" font-family="IBM Plex Mono, monospace" font-size="8" fill="#6A5B45" opacity=".7">IMG_2036.jpg</text>
+          </g>
+        </svg>
+      </div>
+      <div class="sample-info">
+        <h3>Piezas de productos de barrio</h3>
+        <p>De fotos de productos sueltas a un feed que muestra oficio y calidad.</p>
+        <div class="metric">📈 +12K reproducciones en un reel</div>
+      </div>
+    </div>
+
+    <p class="disclaimer">*Mockups ilustrativos del formato de trabajo — todavía no tenemos casos reales para mostrar. Las métricas corresponden a benchmarks proyectados para cuentas similares en cada nicho, no a resultados garantizados. Vamos a reemplazar esto por casos reales apenas los tengamos.</p>
+  </div>
+</section>
+
+<!-- SOBRE NOSOTROS -->
+<section class="about">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow" style="color:#8b8da0;">Quiénes somos</p>
+      <h2 class="display">No somos 50 personas.</h2>
+    </div>
+    <p class="about-text">Arrancamos porque vimos que <strong>coaches, start ups y negocios de barrio</strong> tienen algo valioso para ofrecer, pero se pierden en redes por falta de tiempo. Somos el equipo directo que edita, diseña y te manda el reporte cada mes — sin intermediarios, sin vueltas.</p>
+  </div>
+</section>
+
+<!-- PROCESO -->
+<section id="proceso">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Cómo trabajamos</p>
+      <h2 class="display">Cuatro pasos, sin sorpresas.</h2>
+    </div>
+    <div class="process-list">
+      <div class="process-row">
+        <div class="step">01</div>
+        <div><h3>Diagnóstico</h3><p>Analizamos tu cuenta actual y detectamos qué está frenando tu crecimiento.</p></div>
+      </div>
+      <div class="process-row">
+        <div class="step">02</div>
+        <div><h3>Propuesta</h3><p>Te armamos un plan de contenido a medida, con calendario y objetivos claros.</p></div>
+      </div>
+      <div class="process-row">
+        <div class="step">03</div>
+        <div><h3>Producción</h3><p>Editamos, diseñamos y publicamos según lo acordado — vos solo aprobás.</p></div>
+      </div>
+      <div class="process-row">
+        <div class="step">04</div>
+        <div><h3>Reporte</h3><p>Cada mes te mostramos qué funcionó, en números simples y sin tecnicismos.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTADOS ESPERADOS -->
+<section class="results">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Qué podés esperar</p>
+      <h2 class="display">Basado en benchmarks de negocios similares.</h2>
+    </div>
+    <div class="results-grid">
+      <div class="result-card">
+        <p class="big">+30-40%</p>
+        <p>de alcance en los primeros 60 días con contenido optimizado.</p>
+      </div>
+      <div class="result-card">
+        <p class="big">&lt;2sem</p>
+        <p>para tener presencia visual consistente trabajando juntos.</p>
+      </div>
+      <div class="result-card">
+        <p class="big">1/mes</p>
+        <p>reporte claro que te dice exactamente qué está funcionando.</p>
+      </div>
+    </div>
+    <p class="disclaimer">*Proyecciones basadas en el desempeño típico de cuentas similares, no garantías. Los resultados reales de tu cuenta se irán mostrando acá a medida que trabajemos juntos.</p>
+  </div>
+</section>
+
+<!-- TARIFAS -->
+<section class="pricing" id="tarifas">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Tarifas</p>
+      <h2 class="display">Un plan de entrada, sin letra chica.</h2>
+    </div>
+    <div class="price-card">
+      <p class="amount">USD 200<span>/mes</span></p>
+      <ul>
+        <li>Calendario editorial mensual</li>
+        <li>Edición de reels</li>
+        <li>Diseño gráfico + copywriting</li>
+        <li>Reporte mensual de métricas</li>
+      </ul>
+      <p class="note">¿Necesitás también programación y publicación, o una landing page? Lo armamos a medida según lo que tu marca necesite.</p>
+      <a class="btn-primary" style="margin-top:26px;" href="https://wa.me/5491163647233?text=Hola!%20Quiero%20consultar%20sobre%20el%20plan%20de%20USD%20200%2Fmes%20%F0%9F%99%8C" target="_blank" rel="noopener">
+        Hablemos por WhatsApp →
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-row">
+    <div class="logo">L&L Marketing</div>
+    <div>Buenos Aires, Argentina — trabajamos con coaches, start ups y más.</div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5491163647233?text=Hola!%20Vi%20la%20web%20y%20quiero%20consultar%20%F0%9F%99%8C" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4C7.2 4 3.28 7.9 3.28 12.72c0 1.55.4 3.06 1.18 4.4L3.2 21l3.98-1.24a8.83 8.83 0 0 0 4.87 1.44h.01c4.85 0 8.78-3.9 8.78-8.72a8.65 8.65 0 0 0-2.24-6.16Zm-5.55 13.4h-.01a7.3 7.3 0 0 1-3.7-1.02l-.27-.16-2.75.86.87-2.68-.18-.28a7.24 7.24 0 0 1-1.12-3.86 7.3 7.3 0 0 1 7.31-7.28c1.95 0 3.79.76 5.17 2.14a7.22 7.22 0 0 1 2.13 5.15c0 4.02-3.29 7.13-7.45 7.13Zm4.02-5.34c-.22-.11-1.3-.64-1.5-.71-.2-.08-.35-.11-.5.11-.15.22-.57.71-.7.86-.13.14-.26.16-.48.05-.22-.11-.93-.34-1.77-1.09-.65-.58-1.1-1.3-1.22-1.52-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.39.11-.13.15-.22.22-.37.07-.15.04-.28-.02-.39-.06-.11-.5-1.2-.68-1.65-.18-.43-.36-.37-.5-.38h-.43c-.15 0-.39.06-.6.28-.2.22-.78.76-.78 1.86s.8 2.16.91 2.31c.11.15 1.58 2.41 3.83 3.38.54.23.96.37 1.28.47.54.17 1.03.15 1.42.09.43-.06 1.3-.53 1.49-1.05.18-.51.18-.95.13-1.05-.05-.1-.2-.16-.42-.27Z"/></svg>
+</a>
+
+</body>
+</html>
