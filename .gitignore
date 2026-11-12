@@ -1,0 +1,7 @@
+# Originales pesados: la web usa las versiones comprimidas de media/ e img/
+/*.mp4
+/*.mov
+/Logo*.jpeg
+
+# Capturas y reportes del rediseño
+.taste-skill/

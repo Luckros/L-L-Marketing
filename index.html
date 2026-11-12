@@ -1,320 +1,392 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-AR" class="no-js">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.className = 'js'</script>
 
-<!-- ===== SEO básico ===== -->
-<!-- TODO: reemplazar TU-DOMINIO.com por tu dominio real en todas las URLs de esta sección -->
-<title>Edición de reels y diseño para start ups y negocios locales | L&L Marketing</title>
-<meta name="description" content="Editamos tus reels, diseñamos tus piezas y armamos tu calendario mensual. Agencia de contenido para start ups y y más. Plan desde USD 200/mes.">
-<meta name="keywords" content="edición de reels, diseño gráfico redes sociales, agencia de contenido, marketing y más, calendario editorial, community manager Buenos Aires">
-<meta name="robots" content="index, follow">
-<meta name="author" content="L&L Marketing">
+<title>Edición de reels y redes en Buenos Aires | L&amp;L Studio</title>
+<meta name="description" content="Lucas y Leia editan tus reels en 24 horas, diseñan tus piezas y gestionan tus redes. Para start ups y negocios de Buenos Aires, desde USD 200/mes.">
 <link rel="canonical" href="https://l-l-marketing.vercel.app/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0a1a4f">
 
-<!-- ===== Open Graph (WhatsApp, Instagram, Facebook, LinkedIn) ===== -->
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="L&amp;L Studio">
+<meta property="og:locale" content="es_AR">
 <meta property="og:url" content="https://l-l-marketing.vercel.app/">
-<meta property="og:title" content="Hacemos que te encuentren en redes. Y que se queden.">
-<meta property="og:description" content="Edición de video, diseño y estrategia de contenido para start ups y negocios que quieren crecer en redes sociales. Plan desde USD 200/mes.">
+<meta property="og:title" content="L&amp;L Studio — Reels que retienen">
+<meta property="og:description" content="Edición de reels en 24 horas, diseño y gestión de redes para start ups y negocios locales. Desde USD 200 por mes.">
 <meta property="og:image" content="https://l-l-marketing.vercel.app/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:locale" content="es_AR">
-<meta property="og:site_name" content="L&L Marketing">
-
-<!-- ===== Twitter / X Card ===== -->
+<meta property="og:image:alt" content="L&amp;L Studio: Reels que retienen">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Hacemos que te encuentren en redes. Y que se queden.">
-<meta name="twitter:description" content="Edición de video, diseño y estrategia de contenido start ups y negocios que quieren crecer en redes sociales.">
-<meta name="twitter:image" content="https://l-l-marketing.vercel.app/og-image.jpg">
 
-<!-- ===== Favicon (reemplazar por tus propios archivos) ===== -->
-<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fraunces:ital,wght@1,500;1,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="preload" as="image" href="media/edicion-3.webp">
 
-<!-- ===== Datos estructurados (Schema.org) — LocalBusiness ===== -->
-<!-- Esto ayuda a Google a entenderte como negocio local y habilita rich results (estrellas, horario, etc.) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "L&L Marketing",
-  "description": "Agencia de edición de video, diseño gráfico, copywriting y gestión de redes sociales para start ups y negocios locales.",
-  "url": "https://l-l-marketing.vercel.app/",
-  "image": "https://l-l-marketing.vercel.app/og-image.jpg",
-  "priceRange": "USD 200 - USD 500",
-  "areaServed": {
-    "@type": "Country",
-    "name": "Argentina"
-  },
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Buenos Aires",
-    "addressCountry": "AR"
-  },
-  "sameAs": [
-    "https://www.instagram.com/l-l-marketing/",
-    "https://wa.me/5491163647233"
-  ],
-  "makesOffer": [
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Edición de video / reels" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Diseño gráfico y copywriting" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Calendario editorial mensual" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reporte mensual de métricas" } },
-    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Diseño y desarrollo de webs" } }
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://l-l-marketing.vercel.app/#studio",
+      "name": "L&L Studio",
+      "description": "Estudio de edición de reels, diseño para redes, gestión de redes sociales y páginas web para start ups y negocios locales.",
+      "url": "https://l-l-marketing.vercel.app/",
+      "logo": "https://l-l-marketing.vercel.app/img/marca/icon-512.png",
+      "image": "https://l-l-marketing.vercel.app/og-image.jpg",
+      "email": "lmarketingl2511@gmail.com",
+      "telephone": "+54 9 11 6364-7233",
+      "priceRange": "Desde USD 200 por mes",
+      "address": { "@type": "PostalAddress", "addressLocality": "Buenos Aires", "addressCountry": "AR" },
+      "areaServed": { "@type": "Country", "name": "Argentina" },
+      "founder": [
+        { "@type": "Person", "name": "Lucas" },
+        { "@type": "Person", "name": "Leia" }
+      ],
+      "sameAs": ["https://www.instagram.com/l_lmarketing/"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Edición de reels", "url": "https://l-l-marketing.vercel.app/edicion-de-reels/" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Diseño para redes", "url": "https://l-l-marketing.vercel.app/diseno-para-redes/" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gestión de redes", "url": "https://l-l-marketing.vercel.app/gestion-de-redes/" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Páginas web", "url": "https://l-l-marketing.vercel.app/paginas-web/" } }
+        ]
+      },
+      "makesOffer": {
+        "@type": "Offer",
+        "name": "Plan mensual",
+        "price": "200",
+        "priceCurrency": "USD",
+        "description": "Calendario editorial, edición de reels en 24 horas, diseño y copywriting, y reporte mensual de métricas."
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://l-l-marketing.vercel.app/#web",
+      "url": "https://l-l-marketing.vercel.app/",
+      "name": "L&L Studio",
+      "inLanguage": "es-AR",
+      "publisher": { "@id": "https://l-l-marketing.vercel.app/#studio" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "¿Cuánto tardan en editar un reel?", "acceptedAnswer": { "@type": "Answer", "text": "24 horas desde que recibimos el material." } },
+        { "@type": "Question", "name": "¿Qué incluye el plan de USD 200 por mes?", "acceptedAnswer": { "@type": "Answer", "text": "El calendario editorial del mes, la edición de tus reels, el diseño y los textos de cada pieza, y un reporte mensual de métricas." } },
+        { "@type": "Question", "name": "¿Tengo que grabar yo?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Vos grabás con el celular siguiendo el calendario, que dice qué grabar en cada publicación, y nosotros editamos." } },
+        { "@type": "Question", "name": "¿Publican ustedes en mi cuenta?", "acceptedAnswer": { "@type": "Answer", "text": "Si querés, sí. La programación y publicación se suma al plan y se cotiza según cuánto publiques." } },
+        { "@type": "Question", "name": "¿Hacen páginas web?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, landings y sitios completos. Las diseña y programa Lucas, y se cotizan aparte del plan mensual." } },
+        { "@type": "Question", "name": "¿Cómo empezamos?", "acceptedAnswer": { "@type": "Answer", "text": "Escribinos por WhatsApp. Miramos tu Instagram y te devolvemos una mini-auditoría gratis con lo que está frenando tu crecimiento." } }
+      ]
+    }
   ]
 }
 </script>
-<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header>
-  <nav>
-    <div class="logo">L&L<span> </span>Marketing</div>
-    <div class="nav-links">
+<header class="bar">
+  <a class="brand" href="./" aria-label="L&amp;L Studio, inicio"><span class="brand-mark" aria-hidden="true"></span><span class="brand-text">L&amp;L Studio</span></a>
+  <div class="bar-end">
+    <nav class="bar-links" aria-label="Principal">
       <a href="#servicios">Servicios</a>
-      <a href="#trabajos">Trabajos</a>
-      <a href="#proceso">Proceso</a>
-      <a href="#tarifas">Tarifas</a>
-    </div>
-    <a class="nav-cta" href="#cta" target="_blank" rel="noopener">Hablemos</a>
-  </nav>
+      <a href="#como">Cómo trabajamos</a>
+      <a href="#precio">Precio</a>
+      <a href="#preguntas">Preguntas</a>
+    </nav>
+    <details class="menu">
+      <summary>Menú</summary>
+      <nav aria-label="Principal en el celular">
+        <a href="#servicios">Servicios</a>
+        <a href="#como">Cómo trabajamos</a>
+        <a href="#precio">Precio</a>
+        <a href="#preguntas">Preguntas</a>
+      </nav>
+    </details>
+    <a class="button" href="https://wa.me/5491163647233?text=Hola!%20Vi%20la%20web%20de%20L%26L%20Studio%20y%20quiero%20consultar." target="_blank" rel="noopener">Escribinos</a>
+  </div>
 </header>
 
-<!-- <div class="ticker" aria-hidden="true">
-  <div class="ticker-track">
-    <span><span class="dot">●</span>START UPS</span>
-    <span><span class="dot">●</span>Y MÁS</span>
-    <span><span class="dot">●</span>START UPS</span>
-    <span><span class="dot">●</span>Y MÁS</span>
-    <span><span class="dot">●</span>START UPS</span>
-    <span><span class="dot">●</span>Y MÁS</span>
-    <span><span class="dot">●</span>START UPS</span>
-    <span><span class="dot">●</span>Y MÁS</span>
-  </div>
-</div> -->
+<main>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="wrap hero-inner">
-    <p class="eyebrow">Edición · Diseño · Contenido · Webs</p>
-    <h1 class="display">Hacemos que te encuentren en redes. <em>Y que se queden.</em></h1>
-    <p class="lede">Editamos tus reels, diseñamos tus piezas y armamos tu calendario mensual — para que tu marca tenga la presencia que merece, sin que tengas que aprender a hacerlo vos mismo.</p>
-    <div class="hero-ctas">
-      <a class="btn-primary" id="cta" href="https://wa.me/5491163647233?text=Hola!%20Vi%20la%20web%20y%20quiero%20mi%20mini-auditor%C3%ADa%20gratis%20de%20Instagram%20%F0%9F%99%8C" target="_blank" rel="noopener">
-        Quiero mi mini-auditoría gratis →
-      </a>
-      <a class="btn-ghost" href="#trabajos">Ver trabajos</a>
-    </div>
+<section class="hero" data-chapter="paper" aria-labelledby="titulo">
+  <div class="split">
+    <h1 class="display" id="titulo"><span class="split-a">Reels que</span> <span class="split-b">retienen.</span></h1>
   </div>
-  <div class="awning" aria-hidden="true"></div>
+  <div class="hero-foot">
+    <p>Lucas y Leia editan tus reels en 24 horas y llevan tus redes de punta a punta. Para start ups y negocios de Buenos Aires, desde USD&nbsp;200 por mes.</p>
+  </div>
 </section>
 
-<!-- SERVICIOS -->
-<section class="services" id="servicios">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">Qué hacemos</p>
-      <h2 class="display">Todo lo que tu marca necesita para verse — y encontrarse.</h2>
+<section class="edits wrap" data-chapter="blue" data-edits aria-labelledby="ediciones">
+  <div class="grid">
+    <div class="edits-copy">
+      <h2 class="head" id="ediciones" data-reveal>La misma toma, editada tres veces.</h2>
+      <p class="lead" data-reveal style="--i:1">Grabamos un video de los dos en la mesa de trabajo y lo editamos tres veces. Elegí una versión y mirá qué cambia.</p>
+      <div class="switch" role="group" aria-label="Elegí una versión" data-reveal style="--i:2">
+        <button type="button" data-v="1" aria-pressed="false">Sin edición</button>
+        <button type="button" data-v="2" aria-pressed="false">Con subtítulos</button>
+        <button type="button" data-v="3" aria-pressed="true">Edición completa</button>
+      </div>
+      <div aria-live="polite" data-reveal style="--i:3">
+        <p class="edit-note" data-v="1" hidden><strong>Sin edición.</strong> La toma tal cual salió del celular. Nada le dice a quien la ve por qué quedarse.</p>
+        <p class="edit-note" data-v="2" hidden><strong>Con subtítulos.</strong> Ya se entiende sin sonido, que es como mira la mayoría. Pero todavía no engancha.</p>
+        <p class="edit-note" data-v="3"><strong>Edición completa.</strong> Cortes al ritmo de la voz, texto que entra con cada frase y un remate al final. Esta es la que retiene.</p>
+      </div>
     </div>
-  </div>
-  <div class="wrap">
-    <div class="service-grid">
-      <div class="service-card">
-        <p class="num">01</p>
-        <h3>Edición de video</h3>
-        <p>Reels y contenido audiovisual con ritmo, texto y llamado a la acción — pensados para retener.</p>
-      </div>
-      <div class="service-card">
-        <p class="num">02</p>
-        <h3>Diseño + copywriting</h3>
-        <p>Piezas visuales y textos con identidad propia, no plantillas genéricas.</p>
-      </div>
-      <div class="service-card">
-        <p class="num">03</p>
-        <h3>Calendario editorial</h3>
-        <p>Contenido planificado mes a mes. Vos aprobás, nosotros ejecutamos.</p>
-      </div>
-      <div class="service-card">
-        <p class="num">04</p>
-        <h3>Reporte mensual</h3>
-        <p>Alcance, likes y seguidores explicados en simple — sin tecnicismos.</p>
-      </div>
-      <div class="service-card">
-        <p class="num">05</p>
-        <h3>Publicación y programación</h3>
-        <p>Nos ocupamos de que salga a tiempo, en el horario que mejor funciona.</p>
-      </div>
-      <div class="service-card">
-        <p class="num">06</p>
-        <h3>Webs y landing pages</h3>
-        <p>Tu presencia digital completa: una página que convierte visitas en clientes.</p>
-      </div>
+    <div class="edits-screen" data-reveal style="--i:2">
+      <video data-v="1" data-loop data-off loop muted playsinline preload="none" width="720" height="1280" poster="media/edicion-1.webp" aria-label="Versión sin edición: la toma de Lucas y Leia en la mesa, sin cortes ni textos">
+        <source src="media/edicion-1.mp4" type="video/mp4">
+      </video>
+      <video data-v="2" data-loop data-off loop muted playsinline preload="none" width="720" height="1280" poster="media/edicion-2.webp" aria-label="Versión con subtítulos: la misma toma con subtítulos palabra por palabra">
+        <source src="media/edicion-2.mp4" type="video/mp4">
+      </video>
+      <video data-v="3" data-loop class="is-on" autoplay loop muted playsinline preload="metadata" width="720" height="1280" poster="media/edicion-3.webp" aria-label="Versión con edición completa: cortes, textos animados y remate">
+        <source src="media/edicion-3.mp4" type="video/mp4">
+      </video>
     </div>
   </div>
 </section>
 
-<!-- MUESTRAS -->
-<section id="trabajos">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">Trabajos</p>
-      <h2 class="display">Así se ve el <span class="accent-italic">antes y después.</span></h2>
-      <p>Contenido casero transformado en piezas que generan resultados.</p>
-    </div>
+<section class="work wrap" data-chapter="paper" aria-labelledby="reels">
+  <div class="grid">
+    <h2 class="head work-title" id="reels" data-reveal>Reels de nuestra propia cuenta.</h2>
+  </div>
 
-    <div class="sample">
-      <div class="sample-media dual-phone">
-        <div class="phone-mock">
-          <span class="tag tag-before">ANTES</span>
-          <img src="img/antes.jpg" alt="Captura del proceso de edición en bruto, con clips desordenados en la línea de tiempo, antes de terminar el reel">
-        </div>
-        <div class="phone-mock">
-          <span class="tag tag-after">DESPUÉS</span>
-          <img src="img/despues.jpg" alt="Mockup del reel terminado en formato celular, con texto en pantalla ya agregado">
-        </div>
-      </div>
-      <div class="sample-info">
-        <h3>Reels bien pensados</h3>
-        <p>De la línea de tiempo desordenada al reel terminado, con texto y ritmo pensados para retener.</p>
-        <div class="metric">📈 +340 seguidores en 30 días</div>
-      </div>
+  <article class="grid work-block" data-reveal>
+    <div class="work-visual">
+      <video data-loop autoplay loop muted playsinline preload="none" width="720" height="1280" poster="media/reel-mesa.webp" aria-label="Reel: Lucas y Leia en la mesa de trabajo, con mate, explicando por qué la estética no es estrategia">
+        <source src="media/reel-mesa.mp4" type="video/mp4">
+      </video>
     </div>
+    <div class="work-cluster">
+      <img src="img/mesa-trabajo.webp" alt="Lucas y Leia trabajando en la mesa, con la tablet y el mate" width="1080" height="1920" loading="lazy">
+      <h3>Estética no es estrategia</h3>
+      <p>Un plano fijo de los dos en la mesa, cortes al ritmo de la charla y una pieza del brief que entra a mitad del reel para mostrar de qué estamos hablando.</p>
+    </div>
+  </article>
 
-    <div class="sample">
-      <div class="sample-info">
-        <h3>Feed de start up</h3>
-        <p>Rediseño completo de grilla con paleta e identidad definida.</p>
-        <div class="metric">📈 +28% de alcance en 60 días</div>
-      </div>
-      <div class="sample-media">
-        <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Mockup de un celular mostrando una grilla de Instagram curada de 3 por 3 con paleta de marca consistente">
-          <rect width="400" height="300" fill="#F3F3ED"/>
-          <rect x="138" y="18" width="146" height="264" rx="20" fill="#14161F"/>
-          <rect x="147" y="30" width="128" height="240" rx="9" fill="#FFFFFF"/>
-          <circle cx="163" cy="46" r="8" fill="#F4A81E"/>
-          <rect x="177" y="41" width="52" height="4" rx="2" fill="#14161F"/>
-          <rect x="177" y="49" width="34" height="3" rx="1.5" fill="#B9BAC6"/>
-          <g>
-            <rect x="151" y="64" width="38" height="38" fill="#2A3EFF"/>
-            <rect x="192" y="64" width="38" height="38" fill="#F4A81E"/>
-            <rect x="233" y="64" width="38" height="38" fill="#FF5A36"/>
-            <rect x="151" y="105" width="38" height="38" fill="#14161F"/>
-            <rect x="192" y="105" width="38" height="38" fill="#2A3EFF" opacity=".75"/>
-            <rect x="233" y="105" width="38" height="38" fill="#F4A81E" opacity=".8"/>
-            <rect x="151" y="146" width="38" height="38" fill="#FF5A36" opacity=".75"/>
-            <rect x="192" y="146" width="38" height="38" fill="#14161F" opacity=".85"/>
-            <rect x="233" y="146" width="38" height="38" fill="#2A3EFF"/>
-          </g>
-          <text x="211" y="200" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="7" fill="#4A4C57">grilla consistente</text>
-          <text text x="211" y="210" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="7" fill="#4A4C57">· paleta propia ·</text>
-        </svg>
-      </div>
+  <article class="grid work-block" data-reveal>
+    <div class="work-visual">
+      <video data-loop autoplay loop muted playsinline preload="none" width="720" height="1280" poster="media/reel-problema.webp" aria-label="Reel: arrancá con el problema, con blanco y negro para el error y color para la solución">
+        <source src="media/reel-problema.mp4" type="video/mp4">
+      </video>
     </div>
+    <div class="work-cluster">
+      <img src="img/leia-camara.webp" alt="Leia hablando a cámara frente a una cortina" width="1080" height="1920" loading="lazy">
+      <h3>Arrancá con el problema</h3>
+      <p>Cómo abrir un video: blanco y negro con una cruz roja para el error, color para la solución, subtítulos palabra por palabra y tres rincones de la misma casa.</p>
+    </div>
+  </article>
 
-<!-- SOBRE NOSOTROS -->
-<section class="about">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow" style="color:#8b8da0;">Quiénes somos</p>
-      <h2 class="display">No somos 50 personas.</h2>
+  <article class="grid work-block" data-reveal>
+    <div class="work-visual">
+      <video data-loop autoplay loop muted playsinline preload="none" width="720" height="1280" poster="media/reel-biografia.webp" aria-label="Reel: Lucas explica qué pasa con el link de tu biografía de Instagram">
+        <source src="media/reel-biografia.mp4" type="video/mp4">
+      </video>
     </div>
-    <p class="about-text">Arrancamos porque vimos que <strong> start ups y negocios de barrio</strong> tienen algo valioso para ofrecer, pero se pierden en redes por falta de tiempo. Somos el equipo directo que edita, diseña y te manda el reporte cada mes — sin intermediarios, sin vueltas.</p>
+    <div class="work-cluster">
+      <img src="img/biografia-mate.webp" alt="Lucas sentado frente a la tablet con el mate, hablando a cámara" width="1080" height="1920" loading="lazy">
+      <h3>El link de tu biografía</h3>
+      <p>Lucas a cámara con subtítulo por palabra, una captura de web que entra para mostrar el problema y el logo al cierre para que la marca quede.</p>
+    </div>
+  </article>
+</section>
+
+<section class="menu-section wrap" id="servicios" data-chapter="navy" aria-labelledby="que-hacemos">
+  <div class="grid">
+    <div class="sheet" data-reveal>
+      <h2 class="head" id="que-hacemos">Qué hacemos</h2>
+      <div class="sheet-group">
+        <h3>En el plan mensual</h3>
+        <ul class="sheet-list">
+          <li class="sheet-item">
+            <div class="sheet-row"><a href="edicion-de-reels/">Edición de reels</a><span class="value">en 24 h</span></div>
+            <p>Cortes al ritmo, subtítulos y un llamado a la acción, para que miren hasta el final.</p>
+          </li>
+          <li class="sheet-item">
+            <div class="sheet-row"><a href="diseno-para-redes/">Diseño y copywriting</a><span class="value">incluido</span></div>
+            <p>Piezas y textos con la identidad de tu marca, no plantillas.</p>
+          </li>
+          <li class="sheet-item">
+            <div class="sheet-row"><a href="gestion-de-redes/">Calendario editorial</a><span class="value">cada mes</span></div>
+            <p>Todo el mes planificado. Vos aprobás, nosotros ejecutamos.</p>
+          </li>
+          <li class="sheet-item">
+            <div class="sheet-row"><a href="gestion-de-redes/">Reporte de métricas</a><span class="value">cada mes</span></div>
+            <p>Alcance, likes y seguidores explicados en simple.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="sheet-group">
+        <h3>A medida</h3>
+        <ul class="sheet-list">
+          <li class="sheet-item">
+            <div class="sheet-row"><a href="gestion-de-redes/">Programación y publicación</a><span class="value">a cotizar</span></div>
+            <p>Sale a tiempo, en el horario que mejor le funciona a tu cuenta.</p>
+          </li>
+          <li class="sheet-item">
+            <div class="sheet-row"><a href="paginas-web/">Páginas web y landings</a><span class="value">a cotizar</span></div>
+            <p>Una página que convierte visitas en mensajes. Las hace Lucas.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <figure class="menu-photo" data-reveal style="--i:2">
+      <img src="img/lucas-leia-mesa.webp" alt="Lucas y Leia en la mesa de trabajo, con la tablet, el teclado y el termo" width="1080" height="1920" loading="lazy">
+      <figcaption class="small">La mesa donde editamos, con el mate de siempre.</figcaption>
+    </figure>
   </div>
 </section>
 
-<!-- PROCESO -->
-<section id="proceso">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">Cómo trabajamos</p>
-      <h2 class="display">Cuatro pasos, sin sorpresas.</h2>
-    </div>
-    <div class="process-list">
-      <div class="process-row">
-        <div class="step">01</div>
-        <div><h3>Diagnóstico</h3><p>Analizamos tu cuenta actual y detectamos qué está frenando tu crecimiento.</p></div>
-      </div>
-      <div class="process-row">
-        <div class="step">02</div>
-        <div><h3>Propuesta</h3><p>Te armamos un plan de contenido a medida, con calendario y objetivos claros.</p></div>
-      </div>
-      <div class="process-row">
-        <div class="step">03</div>
-        <div><h3>Producción</h3><p>Editamos, diseñamos y publicamos según lo acordado — vos solo aprobás.</p></div>
-      </div>
-      <div class="process-row">
-        <div class="step">04</div>
-        <div><h3>Reporte</h3><p>Cada mes te mostramos qué funcionó, en números simples y sin tecnicismos.</p></div>
-      </div>
-    </div>
-  </div>
+<section class="steps wrap" id="como" data-chapter="paper" aria-labelledby="paso-1">
+  <ol class="grid">
+    <li class="step" data-reveal>
+      <h2 id="paso-1">Primero, hablamos.</h2>
+      <p>Nos escribís por WhatsApp, miramos tu cuenta y te devolvemos una mini-auditoría gratis con lo que está frenando tu crecimiento.</p>
+    </li>
+    <li class="step" data-reveal>
+      <h3>Armamos el mes.</h3>
+      <p>Un calendario con cada publicación, su objetivo y lo que hay que grabar. Lo aprobás antes de que arranque.</p>
+    </li>
+    <li class="step" data-reveal>
+      <h3>Grabás. Editamos.</h3>
+      <p>Nos mandás lo que grabaste y en 24 horas tenés el reel editado, con su pieza y su texto.</p>
+    </li>
+    <li class="step" data-reveal>
+      <h3>Medimos y ajustamos.</h3>
+      <p>A fin de mes, un reporte claro de qué funcionó. El mes siguiente se arma con eso.</p>
+    </li>
+  </ol>
 </section>
 
-<!-- RESULTADOS ESPERADOS -->
-<section class="results">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">Qué podés esperar</p>
-      <h2 class="display">Basado en benchmarks de negocios similares.</h2>
+<section class="about wrap" id="nosotros" data-chapter="cyan" aria-labelledby="somos">
+  <div class="grid">
+    <dl class="facts" data-reveal>
+      <div><dt>Base</dt><dd>Buenos Aires</dd></div>
+      <div><dt>Equipo</dt><dd>Lucas y Leia</dd></div>
+      <div><dt>Entrega</dt><dd>Reels en 24 horas</dd></div>
+      <div><dt>Plan</dt><dd>Desde USD 200 por mes</dd></div>
+    </dl>
+    <div class="about-text">
+      <h2 class="head" id="somos" data-reveal>Somos Lucas y Leia.</h2>
+      <p data-reveal style="--i:1">L&amp;L son nuestras iniciales. Somos dos, editamos y diseñamos los dos, y cuando escribís te contesta uno de nosotros, no una cuenta. Arrancamos porque vimos start ups y negocios de barrio con algo valioso para mostrar y sin tiempo para hacerlo. Las webs las hace Lucas.</p>
     </div>
-    <div class="results-grid">
-      <div class="result-card">
-        <p class="big">+30-40%</p>
-        <p>de alcance en los primeros 60 días con contenido optimizado.</p>
-      </div>
-      <div class="result-card">
-        <p class="big">&lt;2sem</p>
-        <p>para tener presencia visual consistente trabajando juntos.</p>
-      </div>
-      <div class="result-card">
-        <p class="big">1/mes</p>
-        <p>reporte claro que te dice exactamente qué está funcionando.</p>
-      </div>
-    </div>
-    <p class="disclaimer">*Proyecciones basadas en el desempeño típico de cuentas similares, no garantías. Los resultados reales de tu cuenta se irán mostrando acá a medida que trabajemos juntos.</p>
-  </div>
-</section>
-
-<!-- TARIFAS -->
-<section class="pricing" id="tarifas">
-  <div class="wrap">
-    <div class="section-head">
-      <p class="eyebrow">Tarifas</p>
-      <h2 class="display">Un plan de entrada, sin letra chica.</h2>
-    </div>
-    <div class="price-card">
-      <p class="amount">USD 200<span>/mes</span></p>
-      <ul>
-        <li>Calendario editorial mensual</li>
-        <li>Edición de reels</li>
-        <li>Diseño gráfico + copywriting</li>
-        <li>Reporte mensual de métricas</li>
-      </ul>
-      <p class="note">¿Necesitás también programación y publicación, o una landing page? Lo armamos a medida según lo que tu marca necesite.</p>
-      <a class="btn-primary" style="margin-top:26px;" href="https://wa.me/5491163647233?text=Hola!%20Quiero%20consultar%20sobre%20el%20plan%20de%20USD%20200%2Fmes%20%F0%9F%99%8C" target="_blank" rel="noopener">
-        Hablemos por WhatsApp →
-      </a>
+    <p class="about-side" data-reveal>Los que aparecen en nuestros reels somos nosotros.</p>
+    <div class="portraits">
+      <figure data-reveal>
+        <img src="img/leia-ediciones.webp" alt="Leia hablando a cámara en el reel Mismo video, tres ediciones" width="1080" height="1920" loading="lazy">
+        <figcaption>Leia</figcaption>
+      </figure>
+      <figure data-reveal style="--i:1">
+        <img src="img/lucas-camara.webp" alt="Lucas hablando a cámara con el mate en la mano" width="1080" height="1920" loading="lazy">
+        <figcaption>Lucas</figcaption>
+      </figure>
     </div>
   </div>
 </section>
 
-<footer>
-  <div class="wrap footer-row">
-    <div class="logo">L&L Marketing</div>
-    <div>Buenos Aires, Argentina — trabajamos con coaches, start ups y más.</div>
+<section class="price wrap" id="precio" data-chapter="blue" aria-labelledby="plan">
+  <div class="grid">
+    <h2 class="display" id="plan" data-reveal>Todo tu mes<br>por <span class="price-tag">USD&nbsp;200.</span></h2>
+    <div class="price-foot">
+      <p data-reveal style="--i:1">Incluye el calendario editorial, la edición de tus reels en 24 horas, el diseño y los textos de cada pieza, y el reporte de métricas a fin de mes. Sin letra chica.</p>
+      <div class="price-act" data-reveal style="--i:2">
+        <a class="button button--cyan" href="https://wa.me/5491163647233?text=Hola!%20Quiero%20consultar%20por%20el%20plan%20de%20USD%20200%20por%20mes." target="_blank" rel="noopener">Consultar por WhatsApp</a>
+        <a class="link-plain small" href="paginas-web/">¿Necesitás una web? Se cotiza aparte</a>
+      </div>
+    </div>
   </div>
-</footer>
+</section>
 
-<a class="wa-float" href="https://wa.me/5491163647233?text=Hola!%20Vi%20la%20web%20y%20quiero%20consultar%20%F0%9F%99%8C" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
-  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4C7.2 4 3.28 7.9 3.28 12.72c0 1.55.4 3.06 1.18 4.4L3.2 21l3.98-1.24a8.83 8.83 0 0 0 4.87 1.44h.01c4.85 0 8.78-3.9 8.78-8.72a8.65 8.65 0 0 0-2.24-6.16Zm-5.55 13.4h-.01a7.3 7.3 0 0 1-3.7-1.02l-.27-.16-2.75.86.87-2.68-.18-.28a7.24 7.24 0 0 1-1.12-3.86 7.3 7.3 0 0 1 7.31-7.28c1.95 0 3.79.76 5.17 2.14a7.22 7.22 0 0 1 2.13 5.15c0 4.02-3.29 7.13-7.45 7.13Zm4.02-5.34c-.22-.11-1.3-.64-1.5-.71-.2-.08-.35-.11-.5.11-.15.22-.57.71-.7.86-.13.14-.26.16-.48.05-.22-.11-.93-.34-1.77-1.09-.65-.58-1.1-1.3-1.22-1.52-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.39.11-.13.15-.22.22-.37.07-.15.04-.28-.02-.39-.06-.11-.5-1.2-.68-1.65-.18-.43-.36-.37-.5-.38h-.43c-.15 0-.39.06-.6.28-.2.22-.78.76-.78 1.86s.8 2.16.91 2.31c.11.15 1.58 2.41 3.83 3.38.54.23.96.37 1.28.47.54.17 1.03.15 1.42.09.43-.06 1.3-.53 1.49-1.05.18-.51.18-.95.13-1.05-.05-.1-.2-.16-.42-.27Z"/></svg>
+<section class="faq wrap" id="preguntas" data-chapter="paper" aria-labelledby="dudas">
+  <div class="grid">
+    <h2 class="head" id="dudas" data-reveal>Lo que nos preguntan</h2>
+    <div class="faq-list" data-reveal style="--i:1">
+      <details>
+        <summary>¿Cuánto tardan en editar un reel?</summary>
+        <p>24 horas desde que recibimos el material.</p>
+      </details>
+      <details>
+        <summary>¿Qué incluye el plan de USD 200 por mes?</summary>
+        <p>El calendario editorial del mes, la edición de tus reels, el diseño y los textos de cada pieza, y un reporte mensual de métricas.</p>
+      </details>
+      <details>
+        <summary>¿Tengo que grabar yo?</summary>
+        <p>Sí. Vos grabás con el celular siguiendo el calendario, que dice qué grabar en cada publicación, y nosotros editamos.</p>
+      </details>
+      <details>
+        <summary>¿Publican ustedes en mi cuenta?</summary>
+        <p>Si querés, sí. La programación y publicación se suma al plan y se cotiza según cuánto publiques. <a class="link-plain" href="gestion-de-redes/">Más sobre gestión de redes</a>.</p>
+      </details>
+      <details>
+        <summary>¿Hacen páginas web?</summary>
+        <p>Sí, landings y sitios completos. Las diseña y programa Lucas, y se cotizan aparte del plan mensual. <a class="link-plain" href="paginas-web/">Ver páginas web</a>.</p>
+      </details>
+      <details>
+        <summary>¿Cómo empezamos?</summary>
+        <p>Escribinos por WhatsApp. Miramos tu Instagram y te devolvemos una mini-auditoría gratis con lo que está frenando tu crecimiento.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<a class="cta" data-chapter="cyan" href="https://wa.me/5491163647233?text=Hola!%20Vi%20la%20web%20y%20quiero%20mi%20mini-auditor%C3%ADa%20gratis%20de%20Instagram." target="_blank" rel="noopener">
+  <p class="cta-note">Escribinos por WhatsApp. Te contesta Lucas o Leia, y la mini-auditoría de tu Instagram es gratis.</p>
+  <svg class="cta-arrow" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="4" aria-hidden="true"><path d="M12 36 36 12M16 12h20v20"/></svg>
+  <h2 class="cta-word"><svg viewBox="0 0 1000 182" role="img" aria-label="Hablemos"><text x="0" y="176" textLength="1000" lengthAdjust="spacing" font-family="Schibsted Grotesk, sans-serif" font-weight="800" font-size="238">Hablemos</text></svg></h2>
 </a>
 
+</main>
+
+<footer class="foot" data-chapter="navy">
+  <div class="foot-cols">
+    <div>
+      <h2>Contacto</h2>
+      <ul>
+        <li><a href="https://wa.me/5491163647233" target="_blank" rel="noopener">WhatsApp +54 9 11 6364-7233</a></li>
+        <li><a href="mailto:lmarketingl2511@gmail.com">lmarketingl2511@gmail.com</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Servicios</h2>
+      <ul>
+        <li><a href="edicion-de-reels/">Edición de reels</a></li>
+        <li><a href="diseno-para-redes/">Diseño para redes</a></li>
+        <li><a href="gestion-de-redes/">Gestión de redes</a></li>
+        <li><a href="paginas-web/">Páginas web</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Redes</h2>
+      <ul>
+        <li><a href="https://www.instagram.com/l_lmarketing/" target="_blank" rel="noopener">Instagram @l_lmarketing</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Dónde</h2>
+      <ul>
+        <li>Buenos Aires, Argentina</li>
+        <li>Reels editados en 24 horas</li>
+      </ul>
+    </div>
+  </div>
+  <svg class="foot-mark" viewBox="0 0 1000 166" role="img" aria-label="L&amp;L Studio"><text x="0" y="160" textLength="1000" lengthAdjust="spacing" font-family="Schibsted Grotesk, sans-serif" font-weight="800" font-size="220">L&amp;L Studio</text></svg>
+  <div class="foot-legal"><span>© 2026 L&amp;L Studio</span><span>Hecho por Lucas y Leia</span></div>
+</footer>
+
+<script src="site.js" defer></script>
 </body>
 </html>

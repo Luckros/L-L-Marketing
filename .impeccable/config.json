@@ -1,0 +1,44 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-12T14:57:15.469Z",
+        "reason": "Claude, verified in rendered screenshots at 1440/768/390: sections get 16-32px inline padding from .wrap and 60-100px block padding; hero text is absolutely positioned inside the page margins. Static detector does not resolve these."
+      },
+      {
+        "rule": "organic-clip-path",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-12T14:57:15.743Z",
+        "reason": "Claude: regular geometric zigzag edge of the 'Qué hacemos/Qué incluye' ticket, dealt by the design direction (capabilities as a menu); not an organic contour."
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "*/index.html"
+        ],
+        "createdAt": "2026-11-12T14:57:16.022Z",
+        "reason": "Claude, verified in rendered screenshots at 1440/768/390: sections get 16-32px inline padding from .wrap and 60-100px block padding; hero text is absolutely positioned inside the page margins. Static detector does not resolve these."
+      },
+      {
+        "rule": "organic-clip-path",
+        "value": "*",
+        "files": [
+          "*/index.html"
+        ],
+        "createdAt": "2026-11-12T14:57:16.317Z",
+        "reason": "Claude: regular geometric zigzag edge of the 'Qué hacemos/Qué incluye' ticket, dealt by the design direction (capabilities as a menu); not an organic contour."
+      }
+    ]
+  }
+}
