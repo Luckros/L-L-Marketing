@@ -5,3 +5,6 @@
 
 # Capturas y reportes del rediseño
 .taste-skill/
+
+# Fotos originales de WhatsApp: la web usa las versiones de img/
+/WhatsApp*.jpeg
